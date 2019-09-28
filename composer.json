@@ -1,0 +1,26 @@
+{
+    "name": "jianminlee/taobao-top",
+    "description": "taobao top sdk for laravel.",
+    "authors": [
+        {
+            "name": "lijianmin",
+            "email": "lijianmin520@gmail.com"
+        }
+    ],
+    "require": {
+        "ennnnny/tbk": "^0.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jianminlee\\TaobaoTop\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jianminlee\\TaobaoTop\\ServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT"
+}
