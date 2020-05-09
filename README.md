@@ -12,7 +12,7 @@ composer require jianminlee/taobao-top
 
 #### publish config file
 ```shell
-php artisan vendor:publish --provider=Jianminlee\TaobaoTop\ServiceProvider
+php artisan vendor:publish --provider=Jianminlee\\TaobaoTop\\ServiceProvider
 ```
 
 #### add facade

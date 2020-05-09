@@ -11,13 +11,13 @@ class ServiceProvider extends LaravelServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/taobao-top.php' => config_path('taobao-top.php'),
-        ]);
+            __DIR__ . '/../config/taobao-top.php' => $this->app->make('path.config') . 'taobao-top.php',
+        ], 'config');
     }
 
     public function register()
     {
-        $configs = config('taobao-top.config', []);
+        $configs = $this->app->make('config')->get('taobao-top.config', []);
         foreach ($configs as $name => $config){
             $this->app->singleton("taobao-top.{$name}", function () use ($config) {
                 return Factory::Tbk($config);
