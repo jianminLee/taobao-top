@@ -11,7 +11,7 @@ class ServiceProvider extends LaravelServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/taobao-top.php' => $this->app->make('path.config') . 'taobao-top.php',
+            __DIR__ . '/../config/taobao-top.php' => $this->app->make('path.config') . '/taobao-top.php',
         ], 'config');
     }
 
