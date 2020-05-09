@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "ennnnny/tbk": "^0.3.3"
+        "ennnnny/tbk": "^0.4.0"
     },
     "autoload": {
         "psr-4": {
